@@ -51,6 +51,7 @@ button:hover {
 a:not(.au-underline),
 button:not(.au-underline) {
   text-decoration: none;
+  color: red;
 }
 
 blockquote {

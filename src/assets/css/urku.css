@@ -53,7 +53,8 @@ body {
 }
 
 .rk-header {
-  background-color: #fff;
+  
+  color: red;
   position: relative;
   z-index: 5;
 }
@@ -1334,6 +1335,7 @@ body {
 .item-inside__meta .rk-portfolio-title,
 .item-inside__meta .rk-portfolio-category {
   position: relative;
+ 
   z-index: 2;
 }
 

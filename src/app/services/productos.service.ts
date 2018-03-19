@@ -54,7 +54,7 @@ export class ProductosService {
 
   public cargar_producto( cod:string ){
 
-    return this.http.get(`https://paginaweb-23ef1.firebaseio.com/productos/${ cod }.json`);
+    return this.http.get(`https://proyecto-angular-9f07d.firebaseio.com/p/${ cod }.json`);
 
   }
 
@@ -65,7 +65,7 @@ export class ProductosService {
 
     let promesa = new Promise( ( resolve, reject )=>{
 
-      this.http.get('https://paginaweb-23ef1.firebaseio.com/productos_idx.json')
+      this.http.get('https://proyecto-angular-9f07d.firebaseio.com/productos_idx.json')
       .subscribe( res => {
 
         // console.log( res.json() );
