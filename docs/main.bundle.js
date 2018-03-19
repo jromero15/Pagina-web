@@ -180,7 +180,7 @@ var app_routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterMod
 /***/ "../../../../../src/app/components/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n  <div class=\"ae-grid au-xs-ta-center au-mb-4 animated fadeIn\">\r\n\r\n    <div *ngFor=\"let miembro of _is.equipo\"\r\n         class=\"ae-grid__item item-lg-4 ae-kappa au-mb-3\">\r\n      <img [src]=\"miembro.url\" alt=\"\" class=\"au-mb-3\">\r\n      <h5 class=\"ae-u-bolder au-mt-2\">{{ miembro.nombre }}</h5>\r\n      <p class=\"ae-u-bolder au-mb-3\">{{ miembro.subtitulo }}</p>\r\n      <p class=\"au-lg-ta-left au-mb-3 au-pl-4 au-pr-4\">\r\n        {{ miembro.frase }}\r\n      </p>\r\n      <a href=\"https://twitter.com/{{ miembro.twitter }}\" target=\"_blank\" class=\"ae-u-bolder au-underline\">{{ miembro.twitter }}</a>\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n  <div class=\"ae-grid au-pt-2\">\r\n    <div class=\"ae-grid__item item-lg-8 item-lg--offset-2\">\r\n      <h4 class=\"ae-u-bolder\">Contactenos.</h4>\r\n      <p>Prueba</p>\r\n    </div>\r\n  </div>\r\n  <div class=\"ae-grid ae-grid--alt au-xs-ptp-1\">\r\n    <div class=\"ae-grid__item--alt item-lg-4\">\r\n      <h6 class=\"ae-u-boldest\">About</h6>\r\n      <p class=\"au-lh-3\"> </p>\r\n    </div>\r\n    <div class=\"ae-grid__item--alt item-lg-4\">\r\n      <h6 class=\"ae-u-boldest\">Our Mission</h6>\r\n      <p class=\"au-lh-3\"></p>\r\n    </div>\r\n    <div class=\"ae-grid__item--alt item-lg-4\">\r\n      <h6 class=\"ae-u-boldest\">Our Clients</h6>\r\n      <p class=\"au-lh-3\"></p>\r\n      <p class=\"au-lh-3\"></p>\r\n    </div>\r\n  </div>\r\n  <p class=\"au-flex au-pt-4 group-buttons\"><a href=\"portfolio.html\" class=\"au-mt-4 arrow-button arrow-button--right arrow-button--out\">View Our Portfolio<span class=\"arrow-cont\">\r\n        <svg>\r\n          <use xlink:href=\"assets/img/symbols.svg#arrow\"></use>\r\n        </svg></span></a></p>\r\n"
+module.exports = "\r\n\r\n  <div class=\"ae-grid au-xs-ta-center au-mb-4 animated fadeIn\">\r\n\r\n    <div *ngFor=\"let miembro of _is.equipo\"\r\n         class=\"ae-grid__item item-lg-4 ae-kappa au-mb-3\">\r\n      <img [src]=\"miembro.url\" alt=\"\" class=\"au-mb-3\">\r\n      <h5 class=\"ae-u-bolder au-mt-2\">{{ miembro.nombre }}</h5>\r\n      <p class=\"ae-u-bolder au-mb-3\">{{ miembro.subtitulo }}</p>\r\n      <p class=\"au-lg-ta-left au-mb-3 au-pl-4 au-pr-4\">\r\n        {{ miembro.frase }}\r\n      </p>\r\n      <a href=\"https://twitter.com/{{ miembro.twitter }}\" target=\"_blank\" class=\"ae-u-bolder au-underline\">{{ miembro.twitter }}</a>\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n  <div class=\"ae-grid au-pt-2\">\r\n    <div class=\"ae-grid__item item-lg-8 item-lg--offset-2\">\r\n      <h4 class=\"ae-u-bolder\">Contactenos.</h4>\r\n      <p>Prueba</p>\r\n    </div>\r\n  </div>\r\n  <div class=\"ae-grid ae-grid--alt au-xs-ptp-1\">\r\n    <div class=\"ae-grid__item--alt item-lg-4\">\r\n      <h6 class=\"ae-u-boldest\">About</h6>\r\n      <p class=\"au-lh-3\"> </p>\r\n    </div>\r\n    <div class=\"ae-grid__item--alt item-lg-4\">\r\n      <h6 class=\"ae-u-boldest\">Our Mission</h6>\r\n      <p class=\"au-lh-3\"></p>\r\n    </div>\r\n    <div class=\"ae-grid__item--alt item-lg-4\">\r\n      <h6 class=\"ae-u-boldest\">Our Clients</h6>\r\n      <p class=\"au-lh-3\"></p>\r\n      <p class=\"au-lh-3\"></p>\r\n    </div>\r\n  </div>\r\n  <p class=\"au-flex au-pt-4 group-buttons\"><a href=\"portfolio.html\" class=\"au-mt-4 arrow-button arrow-button--right arrow-button--out\">Ver mi perfil<span class=\"arrow-cont\">\r\n        <svg>\r\n          <use xlink:href=\"assets/img/symbols.svg#arrow\"></use>\r\n        </svg></span></a></p>\r\n"
 
 /***/ }),
 
@@ -534,7 +534,7 @@ var InformacionService = /** @class */ (function () {
     };
     InformacionService.prototype.carga_sobre_nosotros = function () {
         var _this = this;
-        this.http.get("https://paginaweb-23ef1.firebaseio.com/equipo.json")
+        this.http.get("https://proyecto-angular-9f07d.firebaseio.com/equipo/equipo.json")
             .subscribe(function (data) {
             // console.log(data.json());
             _this.cargada_sobre_nosotros = true;
@@ -639,8 +639,12 @@ var ProductosService = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
-    production: true
+    production: false
 };
 
 
